@@ -17,7 +17,7 @@ chmod +x ./compile.tex.sh
 ./compile.tex.sh
 ```
 # Running on Docker
-The `Dockerfile` contains a programs and requirements needed to create the Ubuntu:22.04 docker containers. The containers can be executed directly through docker or with docker-compose. The command below will execute the container.
+The `Dockerfile` contains programs and requirements needed to create the Ubuntu:22.04 docker containers. The containers can be executed directly through docker or with docker-compose. The command below will execute the container.
 ```
 docker-compose up --build
 ```
