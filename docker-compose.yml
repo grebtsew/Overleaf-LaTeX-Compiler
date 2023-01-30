@@ -1,5 +1,5 @@
 # Run from folder:
-# /docs
+# ./
 # Run command:
 # docker-compose up --build
 
