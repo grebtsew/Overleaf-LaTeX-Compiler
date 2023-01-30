@@ -24,7 +24,6 @@ for i in documents/*.zip; do
     unzip $i -d ./documents/$filename
 done
 
-
 # Compile each .tex file
 while read p; do
   [[ -f "$p" ]] || continue

@@ -1,9 +1,9 @@
 # Overleaf-LaTeX-Compiler
-Since Overleaf online free edition compile only offers a one minute maximum compile time for LaTeX projects this project was created to compile arbitrary LaTeX documents locally of any size. The project contains a docker container facilitate usage. The steps below describe the user steps. 
+Since Overleaf online free edition compile only offers a one minute maximum compile time for LaTeX projects this project was created to compile arbitrary LaTeX documents locally of any size. The project contains a docker container facilitate usage. The steps below describe the user steps. The implementation used `Latexmk`, similar to Overleaf, make sure that your projects LaTeX version is supported by `Latexmk` to ensure reliable compilation results.
 
 0. Install necessary programs needed to run the compile.tex.sh script (not needed if using docker). A list of the required programs can be found in the `Dockerfile`.
 1. Start by placing your LaTeX projects in the `./document` folder, either as a project folder or `.zip` download from `Overleaf`.  
-2. Define path to the main project `.tex` file that should be compiled in the `compilelist.txt` file. The relative path is important, an example of an appropriate path would be: `documents/project/thesis_main.tex`.
+2. Define path to the main project `.tex` file that should be compiled in the `compilelist.txt` file. The relative path is important, an example of an appropriate path would be: `documents/project/thesis_main.tex`. The implementation requires that the symbols `(` and ` ` does note exist in the path. Always leave a blank row at the end of the file.
 3. Run the compile script locally or via docker, see how below.
 4. The resulting compiled `.pdf` file is moved into the `./target` folder. Done! 
 
