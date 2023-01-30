@@ -1,0 +1,18 @@
+# Run from folder:
+# /docs
+# Run command:
+# docker-compose up --build
+
+
+version: '3.8'
+    
+services:
+  exjobb:
+    build: ./  
+    container_name: overleaf-latex-compile
+    image: grebtsew/overleaf-latex-compile
+    stdin_open: true 
+    privileged: true
+    tty: true
+    volumes:
+       - ./target:/article/target:rw
