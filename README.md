@@ -2,10 +2,6 @@
 ![license](https://img.shields.io/github/license/grebtsew/Overleaf-LaTeX-Compiler)
 ![size](https://img.shields.io/github/repo-size/grebtsew/Overleaf-LaTeX-Compiler)
 ![commit](https://img.shields.io/github/last-commit/grebtsew/Overleaf-LaTeX-Compiler)
-[![Version](https://img.shields.io/github/v/release/grebtsew/Overleaf-LaTeX-Compiler)](https://github.com/grebtsew/Overleaf-LaTeX-Compiler/releases)
-[![Downloads](https://img.shields.io/github/downloads/grebtsew/Overleaf-LaTeX-Compiler/total)](https://github.com/grebtsew/Overleaf-LaTeX-Compiler)
-
-
 
 Since Overleaf online free edition compile only offers a one minute maximum compile time for LaTeX projects this project was created to compile arbitrary LaTeX documents locally of any size. The project contains a docker container that facilitates the usage. The steps below describe how to compile your latex project. The implementation used `Latexmk`, similar to Overleaf, make sure that your projects LaTeX version is supported by `Latexmk` to ensure reliable compilation results.
 
