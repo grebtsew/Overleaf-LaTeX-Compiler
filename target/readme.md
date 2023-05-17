@@ -1,2 +1,3 @@
 # Target folder
-In this folder the compiled .pdf files are stored after compile.
+The compiled pdf files will be moved here.
+

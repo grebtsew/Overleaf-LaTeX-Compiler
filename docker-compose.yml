@@ -7,7 +7,7 @@
 version: '3.8'
     
 services:
-  exjobb:
+  overleaf_latex_compile:
     build: ./  
     container_name: overleaf-latex-compile
     image: grebtsew/overleaf-latex-compile

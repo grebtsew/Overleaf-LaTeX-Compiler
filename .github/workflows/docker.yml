@@ -1,0 +1,34 @@
+name: Docker Build and Test
+
+on:
+  workflow_dispatch: # For now we trigger tests manually only
+
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches:
+#      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Cache Docker image layers
+      uses: actions/cache@v2
+      with:
+        path: |
+          /var/lib/docker
+        key: ${{ runner.os }}-docker-${{ hashFiles('Dockerfile') }}
+        restore-keys: |
+          ${{ runner.os }}-docker-
+
+    - name: Build Docker image
+      run: docker build -t overleaf_latex_compile .
+
+    - name: Test Docker image
+      run: docker run overleaf_latex_compile 
