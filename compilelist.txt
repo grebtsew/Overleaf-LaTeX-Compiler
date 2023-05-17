@@ -1,3 +1,2 @@
 # Some example project build files used while testing, feel free to remove and replace them, always leave a blank row at the end of the file:
-documents/project/thesis_main.tex
-documents/Template-master-thesis-NHH-English/Main.tex
+tests/example/test.tex
